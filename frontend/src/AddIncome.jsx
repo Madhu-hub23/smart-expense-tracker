@@ -15,7 +15,7 @@ function AddIncome() {
             const token = localStorage.getItem("token");
 
             await axios.post(
-                "http://localhost:5000/api/transactions",
+                "https://smart-expense-tracker-w6kg.onrender.com/api/transactions",
                 {
                     type: "income",
                     amount,

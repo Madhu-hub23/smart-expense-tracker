@@ -17,7 +17,7 @@ function Dashboard() {
                 const token = localStorage.getItem("token");
 
                 const response = await axios.get(
-                    "http://localhost:5000/api/dashboard",
+                    "https://smart-expense-tracker-w6kg.onrender.com/api/dashboard",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`

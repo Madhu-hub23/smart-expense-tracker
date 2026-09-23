@@ -11,7 +11,7 @@ function Transactions() {
                 const token = localStorage.getItem("token");
 
                 const response = await axios.get(
-                    "http://localhost:5000/api/transactions",
+                    "https://smart-expense-tracker-w6kg.onrender.com/api/transactions",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
